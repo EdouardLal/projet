@@ -1,0 +1,18 @@
+
+<form [formGroup] ="addNewCarForm" (ngSubmit)="onSubmit()">
+    <table>
+        <tr><td>Titre :</td><td><input type="text" formControlName="title"></td></tr>
+        <tr><td>Addresse :</td><td><input type="text" formControlName="address"></td></tr>
+        <tr><td>Marque :</td><td><input type="text" formControlName="brand"></td></tr>
+        <tr><td>modèle :</td><td><input type="text" formControlName="model"></td></tr>
+        <tr><td>Année de sortie :</td><td><input type="text" formControlName="model_year"></td></tr>
+        <tr><td>Kilométrage :</td><td><input type="text" formControlName="mileage"></td></tr>
+        <tr><td>Type de moteur :</td><td><input type="text" formControlName="fuel"></td></tr>
+        <tr><td>Couleur :</td><td><input type="text" formControlName="color"></td></tr>
+        <tr><td>Nombre de portes :</td><td><input type="number" formControlName="numbers_doors"></td></tr>       
+        <tr><td>Chevaux :</td><td><input type="text" formControlName="horse_power"></td></tr>
+        <tr><td>Prix :</td><td><input type="text" formControlName="price"></td></tr>
+        <tr><td>Photos :</td><td><input type="text" formControlName="picture"></td></tr>
+        <tr> <button type="submit">Ajouter</button>
+    </table>
+</form>

@@ -1,0 +1,25 @@
+
+
+<table>
+
+    <tr><td colspan="2">
+        <img [src]="car.pictures[0]"  [alt]="car.title">       
+    </td></tr>
+    <tr><td colspan="2">{{car.title}}</td></tr>
+    <tr><td>Marque : </td><td>{{car.brand}}</td></tr>
+    <tr><td>Modèle : </td><td>{{car.model}}</td></tr>
+    <tr><td>Année : </td><td>{{car.model_year}}</td></tr>
+    <tr><td>Emission : </td><td>{{car.issuance}}</td></tr>
+    <tr><td>Couleur : </td><td>{{car.color}}</td></tr>
+    <tr><td>Portes : </td><td>{{car.numbers_doors}}</td></tr>
+    <tr><td>Moteur : </td><td>{{car.fuel}}</td></tr>
+    <tr><td>Puissance : </td><td>{{car.horse_power}}</td></tr>
+    <tr><td>Kilométrage : </td><td>{{car.mileage}}</td></tr>
+    <tr><td>Disponible : </td><td>{{car.sold}}</td></tr>
+    <tr><td>Prix : </td><td>{{car.price  | currency:'EUR':'symbol' }}</td></tr>
+    <tr><td>Localisation : </td><td>{{car.address}}</td></tr>
+    <tr><td></td><td>
+        <a (click)="displayCar(this.car)">Voir</a>
+
+{{car | json}}
+</table>
